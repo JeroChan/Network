@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="郡星云盾" name="keywords">
+		<meta name="description" content="郡星云盾推出的运营商级DDos（分布>式拒绝服务）安全防护产品，支持攻击检测、近源压制、近源清洗，重新定义DDos防护">
+		<title>郡星云盾-重新定义DDoS攻击防护</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Web Starter Kit">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI Starter Kit">
+		<link rel="stylesheet" href="css/amazeui.min.css?id=45815218" >
+		<script src="attackDemo/js/esl.js?id=45815218"></script>
+		<script src="attackDemo/js/jquery-1.8.0.js?id=45815218" ></script>
+		<link rel="stylesheet" href="css/bootstrap.css?id=45815218" >
+		<link rel="stylesheet" href="css/ddos.css?id=45815218">
+		<link rel="stylesheet" href="css/attackDemo.css?id=45815218" >
+		
+	</head>
+
+	<body>
+		<!--[if lt IE 9]>
+
+        <p class="chromeframe">您的浏览器版本过低，请升级至IE8以上版本，以获得更好的视觉体验，感谢支持！</p>
+
+        <![endif]-->
+		<header class="am-topbar am-topbar-inverse ask-header">
+			<div class="am-container">
+				<h1 class="am-topbar-brand"><a href="index.htm" tppabs="http://www.damddos.com/" class="am-text-ir">Amaze UI</a></h1><button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+				<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+					<ul class="am-nav am-nav-pills am-topbar-nav">
+						<li class="logo">
+							<img src="./img/logo.png">
+						</li>
+						<li class="am-active">
+							<a href="index.html">防护原理</a>
+						</li>
+						<li>
+							<a href="list.html">数据列表</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<ul class="list-box list-unstyled" id="listBox">
+			<li>
+				<div></div>
+				<div id="barBox"></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+			<li>
+				<div></div>
+			</li>
+		</ul>
+		<ul class="pull-right breviary-box list-unstyled">
+			<li class="on" data-index="0">
+				<div class="breviary-title center">国内能力分布</div>
+				<div class="title-bg"></div>
+			</li>
+			<li data-index="1">
+				<div class="breviary-title center">攻击演示</div>
+				<div class="title-bg"></div>
+			</li>
+			<li data-index="2">
+				<div class="breviary-title center">近源清洗</div>
+				<div class="title-bg"></div>
+			</li>
+		</ul>
+	</body>
+	<script type="text/javascript" src="attackDemo/js/attackDemo.js?id=45815218"></script>
+	<script>
+		$(function() {
+			var u = navigator.userAgent;
+			if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) && u.indexOf('AppleWebKit') > -1) {
+				$(".list-box>li div.europe, .list-box>li div.asia, .list-box>li div.america").css("filter", "none");
+				$(".dazzle-light-box").css("opacity", "0.6")
+			}
+		})
+	</script>
+
+</html>
